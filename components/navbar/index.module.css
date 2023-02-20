@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    background: black;
+    color: white;
+    text: white;
+    padding:10px;
+}
+.navi {
+    display: flex;
+    margin-left: auto;
+}
+.navicomp {
+    padding: 10px;
+}

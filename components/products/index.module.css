@@ -1,0 +1,60 @@
+.main1 {
+  display: flex;
+  flex-wrap: wrap;
+  display-direction: row;
+}
+
+.main {
+  
+  min-height: 300px;
+  min-width: 200px;
+  background: white;
+  margin: 10px;
+  border-radius: 8px;
+  color: black;
+  flex: 1;
+  justify-content: center;
+  align-text: center;
+}
+.main3 {
+  justify-content: center;
+  align-items: center;
+  align-text: center;
+  padding: 10px;
+}
+.imagediv {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+.img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: auto;
+  display: block;
+
+  justify-content: center;
+}
+.title {
+  justify-content: center;
+  align-items: center;
+  align-text: center;
+  padding: 10px;
+  height: 110px
+}
+.pony {
+  text: bold;
+  text-size: 20px;
+  text-align: center;
+  padding: 3px;
+  font-size: 1.1rem;
+  font-family: Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+@media (max-width: 650px) {
+    .main1 {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
