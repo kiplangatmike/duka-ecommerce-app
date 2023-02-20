@@ -34,7 +34,7 @@ export default function Home({ res }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>best deals on offer</h1>
+        <h1 className="font-bold text-4xl bg-red-600 w-full text-center justify-center p-8 rounded-md">best deals on offer</h1>
         <Products data={res} />
       </main>
     </>

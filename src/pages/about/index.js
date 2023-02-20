@@ -8,7 +8,7 @@ const About = () => {
       <div className={classes.main}>
         <div className={classes.about1}>
           <div>
-            <h1>At our Core, we are here for you</h1>
+            <h1 className="font-bold">At our Core, we are here for you</h1>
           </div>
           <div>
             <h5>

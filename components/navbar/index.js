@@ -1,7 +1,7 @@
 import classes from "./index.module.css";
 import Link from "next/link";
 import React, { useState } from "react";
-import HamburgerMenu from "components/burger/hamburger";
+// import HamburgerMenu from "components/burger/hamburger";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);

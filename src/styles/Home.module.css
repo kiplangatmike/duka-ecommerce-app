@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: 100vh;
   background: ;
 }
@@ -48,7 +48,7 @@
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding: rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
@@ -105,10 +105,7 @@
   transform: translateZ(0);
 }
 
-.logo,
-.thirteen {
-  position: relative;
-}
+
 
 .thirteen {
   display: flex;
