@@ -10,10 +10,10 @@ const Products = ({ data }) => {
             <div className={classes.imagediv}>
             <Link href="/item/[id]" as={`/item/${item.id}`}><img src={item.image} className={classes.img} /></Link>
             </div>
-            <Link href="/item/[id]" as={`/item/${item.id}`}>{item.title}</Link>
+            <Link href="/item/[id]" as={`/item/${item.id}`}>
             <div className={classes.title}>
               <h3>{item.title}</h3>
-            </div>
+            </div></Link>
             <div className={classes.pony}>
               <p >$ {item.price}</p>
             </div>
