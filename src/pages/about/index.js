@@ -4,7 +4,7 @@ import classes from "./index.module.css";
 
 const About = () => {
   return (
-    <>
+    <div>
       <div className={classes.main}>
         <div className={classes.about1}>
           <div>
@@ -17,7 +17,6 @@ const About = () => {
             </h5>
           </div>
         </div>
-
         <div>
           <div className={classes.about2}>
             <Image src={pic} alt="" className={classes.img} />
@@ -28,7 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
