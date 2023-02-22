@@ -10,7 +10,7 @@ const Contact = () => {
     event.preventDefault();
   };
   return (
-    <>
+    <div className="flex-grow">
       {/* <head>
         <title>Contact Us</title>
       </head> */}
@@ -46,7 +46,7 @@ const Contact = () => {
             />
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

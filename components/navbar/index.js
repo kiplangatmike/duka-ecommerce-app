@@ -1,6 +1,7 @@
 import classes from "./index.module.css";
 import Link from "next/link";
 import React, { useState } from "react";
+import Searchbar from "components/Searchbar";
 // import HamburgerMenu from "components/burger/hamburger";
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className={classes.main}>
-      <div>
+      <div className="">
         <Link href="/" className="inline-flex items-center p-2 mr-4">
           <svg
             viewBox="0 0 24 24"
@@ -29,6 +30,7 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
+      <div><Searchbar /></div>
       <button
         onClick={handleClick}
         className="inline-flex p-3 hover:bg-white rounded lg:hidden text-white hover:text-black ml-auto hover:text-white outline-none"

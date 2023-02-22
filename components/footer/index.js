@@ -1,8 +1,8 @@
 
 const Footer = () => {
   return (
-    <footer>
-      <p>&copy; 2023 My Website</p>
+    <footer className="flex items-center justify-center w-full h-12 bg-gray-200 text-black bottom-0">
+      <p>&copy; 2023 Mike Kiplangat</p>
     </footer>
   );
 };
