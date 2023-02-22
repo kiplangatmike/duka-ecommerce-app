@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-const Categoryitem = ({ data }) => {
+const CategoryItem = ({ data }) => {
   return (
     <div>
       <h2>{data.title}</h2>
