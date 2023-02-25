@@ -6,7 +6,11 @@ import Searchbar from "components/Searchbar";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [searchRes, setSearchRes] = useState([]);
 
+  const handleSearch = () => {
+    setSearchRes(res);
+  };
   const handleClick = () => {
     setActive(!active);
   };
@@ -30,7 +34,14 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      <div><Searchbar /></div>
+      <div>
+        <Searchbar onSearch={handleSearch} />
+        <ul>
+          {searchRes.map(() => (
+            <li key={res.id}>{res.title}</li>
+          ))}
+        </ul>
+      </div>
       <button
         onClick={handleClick}
         className="inline-flex p-3 hover:bg-white rounded lg:hidden text-white hover:text-black ml-auto hover:text-white outline-none"

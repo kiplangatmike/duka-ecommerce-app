@@ -1,24 +1,31 @@
 import { useState } from "react";
 
-const Searchbar = () => {
-  const [search, setSearch] = useState("");
+const Searchbar = ({ onSearch }) => {
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleClick = (event) => {
-    setSearch(event.target.value);
+    setSearchTerm(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
+    const search = await fetch(
+      `https://fakestoreapi.com/search=q${searchTerm}`
+    );
+    const res = await search.json();
+    onSearch(res);
+    console.log(res)
   };
 
   return (
     <div className="">
-      <form >
+      <form>
         <input
           type="text"
           className=" border border-gray-400 rounded-l-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="search..."
-          value={search}
+          value={searchTerm}
           onChange={handleClick}
         />
         <button
