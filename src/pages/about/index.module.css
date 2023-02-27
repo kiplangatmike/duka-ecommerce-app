@@ -1,6 +1,5 @@
 .main {
-    font-family: sans-serif;
-    
+  font-family: sans-serif;
 }
 .img {
   height: 267.5px;
@@ -17,24 +16,25 @@
   margin-left: 60px;
 }
 .about2 {
- display: flex;
- margin-left: 60px;
- gap: 45px;
+  display: flex;
+  margin-left: 60px;
+  gap: 45px;
+  margin-top: 20px;
 }
 
 .desc {
-  align-content: center;
- font-size: 1.3em;
- text-align: left;
+  align-items: center;
+  font-size: 1.3em;
+  text-align: left;
 }
 
 @media (max-width: 750px) {
-    .about2 {
-      width: 100%;
-      flex-direction: column;
-      margin-top: 50px;
-    }
-    .desc {
-        margin-top: 50px;
-    }
+  .about2 {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
   }
+  .desc {
+    margin-top: 50px;
+  }
+}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Products from "../../components/products";
+import Hero from "components/Hero/Index";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +16,11 @@ export const getStaticProps = async () => {
     return {
       notfound: true,
       redirect: {
-        destination: '/',
-        permanent: false
-      }
-    }
-  }
-  else {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  } else {
     return { props: { res } };
   }
 };
@@ -33,9 +33,13 @@ export default function Home({ res }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1 className="font-bold text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 w-full text-center justify-center p-8 rounded-md">best deals on offer</h1>
-        <Products data={res} />
+      <main className="">
+        <section className="mx-[2%] content-center">
+          <div>
+            <Hero />
+          </div>
+          <Products data={res} />
+        </section>
       </main>
     </>
   );
