@@ -2,14 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   display-direction: row;
+  justify-content: center;
 }
 
 .main {
-  
   min-height: 300px;
   min-width: 200px;
+  max-width: 240px;
   background: white;
-  margin: 10px;
+  margin: 6px;
   border-radius: 8px;
   color: black;
   flex: 1;
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: center;
   height: 150px;
+  margin: 10px;
 }
 .img {
   max-width: 100px;
@@ -40,7 +42,7 @@
   align-items: center;
   align-text: center;
   padding: 10px;
-  height: 110px
+  height: 110px;
 }
 .pony {
   text: bold;
@@ -49,12 +51,17 @@
   padding: 3px;
   font-size: 1.1rem;
   font-family: Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-  Bitstream Vera Sans Mono, Courier New, monospace;
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+.card_foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 650px) {
-    .main1 {
-      width: 100%;
-      flex-direction: column;
-    }
+  .main1 {
+    width: 100%;
+    flex-direction: column;
   }
+}

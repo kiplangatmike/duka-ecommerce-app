@@ -35,9 +35,7 @@ export default function Home({ res }) {
       </Head>
       <main className="">
         <section className="mx-[2%] content-center">
-          <div>
-            <Hero />
-          </div>
+          <Hero />
           <Products data={res} />
         </section>
       </main>
