@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="bg-[#ffe7cc] m-[10px] rounded-md my-8">
+    <div className="bg-[#ffe7cc] rounded-md my-8">
       <div>
         <h1 className="m-4 text-gray-700 font-bold text-[30px]">
           Grab Upto 50% Off On <br /> These Selected Items
