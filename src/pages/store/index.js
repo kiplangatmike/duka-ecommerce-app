@@ -17,10 +17,9 @@ export const getStaticProps = async () => {
   }
 };
 
-
 const Store = ({ res }) => {
   return (
-    <div className={styles.main}>
+    <div className="mx-[4%] content-center">
       <h1 className="font-bold text-4xl">Store</h1>
       <br />
       {<Products data={res} />}

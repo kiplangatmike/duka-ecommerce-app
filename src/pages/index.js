@@ -33,11 +33,9 @@ export default function Home({ res }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">
-        <section className="mx-[2%] content-center">
-          <Hero />
-          <Products data={res} />
-        </section>
+      <main className="w-[82%] mx-auto">
+        <Hero />
+        <Products data={res} />
       </main>
     </>
   );

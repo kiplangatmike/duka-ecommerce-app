@@ -15,26 +15,28 @@ const Searchbar = ({ onSearch }) => {
     );
     const res = await search.json();
     onSearch(res);
-    console.log(res)
+    console.log(res);
   };
 
   return (
-    <div className="">
+    <div>
       <form>
-        <input
-          type="text"
-          className=" border border-gray-400 rounded-l-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="search..."
-          value={searchTerm}
-          onChange={handleClick}
-        />
-        <button
-          className="bg-pink-500 hover:bg-purple-500 text-white font-bold rounded-r-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          type="submit"
-          onClick={handleSubmit}
-        >
-          Search
-        </button>
+        <div>
+          <input
+            type="text"
+            className="min-w-8 rounded-l-lg px-4 py-2 focus:outline-none"
+            placeholder="search..."
+            value={searchTerm}
+            onChange={handleClick}
+          />
+          <button
+            className="bg-pink-500 hover:bg-purple-500 text-white font-bold rounded-r-lg px-4 py-2 focus:outline-none"
+            type="submit"
+            onClick={handleSubmit}
+          >
+            Search
+          </button>
+        </div>
       </form>
     </div>
   );

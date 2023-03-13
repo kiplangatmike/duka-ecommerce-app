@@ -16,19 +16,12 @@ const Navbar = () => {
   };
 
   const propss =
-    "cursor-pointer lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-white hover:text-black";
+    "cursor-pointer lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-[#ffe7cc] hover:text-black";
 
   return (
-    <div className={classes.main}>
+    <div className="flex w-[82%] mx-auto my-5">
       <div className="">
         <Link href="/" className="inline-flex items-center p-2 mr-4">
-          <svg
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            className="fill-current text-white h-8 w-8 mr-2"
-          >
-            <path />
-          </svg>
           <span className="text-xl text-white font-bold uppercase tracking-wide">
             duka
           </span>
@@ -44,7 +37,7 @@ const Navbar = () => {
       </div>
       <button
         onClick={handleClick}
-        className="inline-flex p-3 hover:bg-white rounded lg:hidden text-white hover:text-black ml-auto hover:text-white outline-none"
+        className="inline-flex px-3 py-5 rounded lg:hidden text-white hover:text-black ml-auto hover:bg-[#ffe7cc] outline-none"
       >
         <svg
           className="w-6 h-6"
@@ -66,7 +59,7 @@ const Navbar = () => {
           active ? "" : "hidden"
         } w-full lg:inline-flex lg:flex-grow lg:w-auto`}
       >
-        <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+        <div className="lg:inline-flex gap-3 text-[18px] lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto ">
           <Link href="/" className={propss}>
             Home
           </Link>
