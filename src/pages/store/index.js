@@ -26,5 +26,4 @@ const Store = ({ res }) => {
     </div>
   );
 };
-
 export default Store;
