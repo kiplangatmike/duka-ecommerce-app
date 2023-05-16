@@ -15,7 +15,7 @@ const Navbar = () => {
     setActive(!active);
   };
 
-  const propss =
+  const styling =
     "cursor-pointer lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-[#ffe7cc] hover:text-black";
 
   return (
@@ -60,16 +60,16 @@ const Navbar = () => {
         } w-full lg:inline-flex lg:flex-grow lg:w-auto`}
       >
         <div className="lg:inline-flex gap-3 text-[18px] lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto ">
-          <Link href="/" className={propss}>
+          <Link href="/" className={styling}>
             Home
           </Link>
-          <Link href="/store" className={propss}>
+          <Link href="/store" className={styling}>
             Store
           </Link>
-          <Link href="/about" className={propss}>
+          <Link href="/about" className={styling}>
             About
           </Link>
-          <Link href="/Contactus" className={propss}>
+          <Link href="/Contactus" className={styling}>
             Contact Us
           </Link>
         </div>
